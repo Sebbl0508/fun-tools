@@ -77,10 +77,8 @@ function updateNameList() {
         btn.innerHTML = X;
 
         let listItem = document.createElement('li');
-        //listItem.textContent = names[i];
         listItem.appendChild(btn);
         listItem.append(names[i].name);
-        //listItem.appendChild(btn);
 
         nameList.appendChild(listItem);
     }
@@ -248,7 +246,7 @@ function animateWheel() {
     if (!currentlySpinning)
         return;
 
-    initialDeg = (initialDeg + wheelSpeed) % 360;
+    initialDeg = (initialDeg + wheelSpeed) % 360.0;
     drawWheelAndArrow();
     window.requestAnimationFrame(animateWheel);
 }
