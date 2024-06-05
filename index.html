@@ -1,13 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/pico.violet.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fun Tools</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main id="main-wrapper" class="container-fluid">
+      <h1>Wheel of Watering</h1>
+      <div id="wheel-and-name-wrapper" class="flex-row flex-col-small">
+        <div id="wheel-canvas-wrapper" class="cont-cont">
+          <canvas id="wheel-canvas" width="1000" height="1000"></canvas>
+        </div>
+        <div id="name-list-wrapper" class="cont-cont">
+          <h1>Names</h1>
+          <ul id="name-list"></ul>
+          <div class="flex-spacer"></div>
+          <div id="name-list-input-wrapper">
+            <fieldset role="group">
+              <input
+                id="name-input"
+                type="text"
+                name="name"
+                placeholder="Name"
+                aria-label="Name"
+              />
+              <button id="name-list-add-btn">Add</button>
+            </fieldset>
+          </div>
+          <button id="spin-button">SPIN!</button>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
