@@ -104,7 +104,7 @@ function drawWheel() {
 
     ctx.lineWidth = 1;
     ctx.strokeStyle = "rgb(0 0 0)";
-    ctx.font = "bold 48px sans";
+    ctx.font = "bold 48px Helvetica, Arial, sans-serif";
     for(let i = 0; i < names.length; i++) {
         let endDeg = curDeg + sliceDegSize;
 

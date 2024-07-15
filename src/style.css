@@ -1,9 +1,21 @@
 .cont-cont {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid #cacaca80;
     border-radius: var(--pico-border-radius);
     padding: 1rem;
     margin: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+    .cont-cont {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid #cacaca80;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .cont-cont {
+        background-color: rgba(200, 200, 255);
+        border: 1px solid #fafafa80;
+    }
 }
 
 .flex-spacer {
